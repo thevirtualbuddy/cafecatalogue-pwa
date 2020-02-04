@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/style.css" />
+    
+   <!-- Adding web manifest -->
+    <link rel="manifest" href="manifest.json" />
+    <!-- ios support -->
+   <link rel="apple-touch-icon" href="images/icons/icon-72x72.png" />
+   <link rel="apple-touch-icon" href="images/icons/icon-96x96.png" />
+   <link rel="apple-touch-icon" href="images/icons/icon-128x128.png" />
+   <link rel="apple-touch-icon" href="images/icons/icon-144x144.png" />
+   <link rel="apple-touch-icon" href="images/icons/icon-152x152.png" />
+   <link rel="apple-touch-icon" href="images/icons/icon-192x192.png" />
+   <link rel="apple-touch-icon" href="images/icons/icon-384x384.png" />
+   <link rel="apple-touch-icon" href="images/icons/icon-512x512.png" />
+   <meta name="apple-mobile-web-app-status-bar" content="#db4938" />
+   <meta name="theme-color" content="#db4938" />
+
+    <title>Café Catalogue</title>
+    <link rel = "icon" href ="toplogo.png" type = "image/x-icon"> 
+
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 4px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+button {
+  background-color: #3b2f2f;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+button:hover {
+  background-color: #555555;
+  color: white;
+}
+
+input[type=email], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 4px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+ .container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+</style>
+
+
+
+
+  </head>
+  <body>
+    <main>
+      <nav>
+        <h1><a href="index.html">Café Catalogue</a></h1>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="feedback.html">Feedback</a></li>
+        </ul>
+      </nav>     
+
+      <div class="container"  align="left">
+  <form name="feedbackform" netlify>
+    <label for="fname">Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+    
+    <label for="Email">E-mail</label>
+    <input type="email" id="Email" name="email" placeholder="Your Email">
+
+    <label for="subject">Message</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px" required></textarea>
+
+    <button>Submit</button>
+  </form>
+
+	</div>
+    </main>
+    
+  </body>
+</html>
